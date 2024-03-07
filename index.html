@@ -1,94 +1,122 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
 
 <head>
-    <title>Stick Merge 2 Unblocked - ubg235 GameMonetize</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="author" content="TinyDobbins" />
-    <meta name="description" content="Stick Merge HTML5 game" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
-    <script src="poki.js"></script>
+ 
 
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Bally Unblocked - ubg235 GameMonetize</title>
+<link rel="stylesheet" href="TemplateData/style.css">
+	<style>
+      @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;500&display=swap');	
+      @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;500&family=MuseoModerno:wght@600&display=swap');
 
-    <script src="js/webfont.js"></script>
-    <script src="js/phaser.min.js"></script>
-    <script src="js/SpinePlugin.min.js"></script>
-    <script src="js/plugin-api-poki.js"></script>
-    <script src="js/HorizontalSlider.js"></script>
-    <script src="js/Buttons.js"></script>
+		html,
+		body {
+			background: #000;
+			width: 100%;
+			height: 100%;
+			overflow: visible;
+			padding: 0;
+			margin: 0;
+		}
+
+		div#gameContainer {
+			background: transparent !important;
+			position: absolute;
+		}
+
+		div#gameContainer canvas {
+			position: absolute;
+		}
+
+		div#gameContainer canvas[data-pixel-art="true"] {
+			position: absolute;
+			image-rendering: optimizeSpeed;
+			image-rendering: -webkit-crisp-edges;
+			image-rendering: -moz-crisp-edges;
+			image-rendering: -o-crisp-edges;
+			image-rendering: crisp-edges;
+			image-rendering: -webkit-optimize-contrast;
+			image-rendering: optimize-contrast;
+			image-rendering: pixelated;
+			-ms-interpolation-mode: nearest-neighbor;
+		}
+	</style>
 </head>
 
 <body>
-    <div id="game-container"></div>
-    <div id="orientation"></div>
-    <div id="banner"></div>
-    <script src="js/m.js"></script>
+	<div id="gameContainer">
+		<canvas id="unity-canvas" data-pixel-art=""></canvas>
 
-    
-<script type="text/javascript">
-        window.SDK_OPTIONS = {
-            gameId: "0enartbxbeoct0y3pt4c3ffy1v5gks1l",
-            onEvent: function(a) {
-                switch (a.name) {
-                    case "SDK_GAME_PAUSE":
-                        // pause game logic / mute audio
-                        break;
-                    case "SDK_GAME_START":
-                        // advertisement done, resume game logic and unmute audio
-                        break;
-                    case "SDK_READY":
-                        // when sdk is ready
-                        break;
-                }
-            }
-        };
-        (function(a, b, c) {
-            var d = a.getElementsByTagName(b)[0];
-            a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "patch/js/gm-sdk.js", d.parentNode.insertBefore(a, d))
-        })(document, "script", "gamemonetize-sdk");
-    </script>
-<script type="text/javascript">
-    function google_analytics() {
-        if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
-            sdk.showBanner();
-        }
-    };
+<table width=100% height=70%> 
+    <tr>
+        <td class="height" style="text-align: center; vertical-align: middle;">
+            <img src="logo.png" width=250 height=50 />
+    <br><p id="loading-txt" style="text-align: center; font-family: 'MuseoModerno', cursive;color: white;font-size: 40px;margin-top: 0px;margin-bottom: 0px;" >Loading...</p>	</br>
+        </td>
 
-    function google_analytics_ID() {
-        if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
-            sdk.showBanner();
-        }
-    };
-    setTimeout(function() {
-        google_analytics();
-    }, 1000);
-    setInterval(function() {
-        google_analytics_ID();
-    }, 65000);
-</script>
-<div id="moreg" style="display:none;width:100px;height:100px;z-index:0;position:absolute;bottom:1px;left:10%"><a target="_blank" href="https://zazgames.com" title="more games"><script type="text/javascript" style="display:none">
-//<![CDATA[
-window.__mirage2 = {petok:"aCj.QNwGUOfLrCmu67eagpL0xPleX_OUL2kyVMsyHGk-31536000-0"};
-//]]>
-</script>
-<script type="text/javascript" src="patch/cdn/mirage2.min.js"></script>
-<img data-cfsrc="https://zazgames.com/images/Morethegames.png" width="100" height="100" data-cfstyle="position:fixed; bottom: 0; left: 10px; z-index: 10;" alt="Больше игр" style="display:none;visibility:hidden;"><noscript><img src="https://zazgames.com/images/Morethegames.png" width="100" height="100" style="position:fixed; bottom: 0; left: 10px; z-index: 10;" alt="Больше игр"></noscript></a></div>
-<script>
-(function (a, b, c) {
-   var d = a.getElementsByTagName(b)[0];
-   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "patch/js/gm-sdk-preload.js?v=" + Date.now(), d.parentNode.insertBefore(a, d))
-})(document, "script", "gamemonetize-preload-api");
-</script>
+    </tr>
+</table>
+		<script src="Build/Bally.loader.js"></script>
+		<script>
+			var canvas = document.querySelector("#unity-canvas");
+			var config = {
+				dataUrl: "Build/Bally.data",
+				frameworkUrl: "Build/Bally.framework.js",
+				codeUrl: "Build/Bally.wasm",
+				symbolsUrl: "Build/Bally.symbols.json",
+				streamingAssetsUrl: "StreamingAssets",
+				companyName: "GANG",
+				productName: "Bally",
+				productVersion: "1.1.2",
+			};
+			var scaleToFit;
+			try {
+				scaleToFit = !!JSON.parse("");
+			} catch (e) {
+				scaleToFit = true;
+			}
+			function progressHandler(progress) {
+				var percent = progress * 100 + '%';
+				canvas.style.background = 'linear-gradient(to right, white, white ' + percent + ', transparent ' + percent + ', transparent) no-repeat center';
+				canvas.style.backgroundSize = '100% 1rem';
+			}
+			function onResize() {
+				var container = canvas.parentElement;
+				var w;
+				var h;
 
-  <script src="js/analytics_ubg_v1_4.js"></script>
-  <script src="js/ubg235_client_v1_2.js"></script>
+				if (scaleToFit) {
+					w = window.innerWidth;
+					h = window.innerHeight;
 
+					var r = 600 / 800;
 
+					if (w * r > window.innerHeight) {
+						w = Math.min(w, Math.ceil(h / r));
+					}
+					h = Math.floor(w * r);
+				} else {
+					w = 800;
+					h = 600;
+				}
 
+				container.style.width = canvas.style.width = w + "px";
+				container.style.height = canvas.style.height = h + "px";
+				container.style.top = Math.floor((window.innerHeight - h) / 2) + "px";
+				container.style.left = Math.floor((window.innerWidth - w) / 2) + "px";
+			}
+			createUnityInstance(canvas, config, progressHandler).then(function (instance) {
+				canvas = instance.Module.canvas;
+				onResize();
+			});
+			window.addEventListener('resize', onResize);
+			onResize();
+		</script>
+	</div>
 </body>
 
 </html>
